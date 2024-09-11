@@ -26,6 +26,10 @@ $equipe2 -> ajouterJoueur($joueur2);
 // $equipe2 -> afficherJoueurs();
 
 
+// var_dump($joueur1);
+// var_dump($equipe2);
+
+
 // Améliorer l'affichage
 echo "<style>
         table {
@@ -43,7 +47,7 @@ echo "<style>
         }
       </style>";
 
-echo "<table></table>";
+echo "<table>";
 echo "<thead>
         <tr>
             <th>Nom de l'équipe</th>
@@ -74,5 +78,7 @@ echo "<tr>
                 </tr>";
         
 
+echo "<tbody>";                
+echo "</table>";
 
 ?>
