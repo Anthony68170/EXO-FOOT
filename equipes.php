@@ -1,0 +1,3 @@
+<!-- CODE EQUIPES -->
+
+<?php
