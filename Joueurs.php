@@ -6,22 +6,15 @@
     private string $_prenom;
     private string $_nom;
     private string $_paysOrigine;
-    // private array $_equipes; // Créer le TABLEAU pour les "équipes"
+    private array $_equipes; // Créer le TABLEAU pour les "équipes"
 
 // __construct pour INIATILIASER "chaque" attributs pour "chaque" joueur
     public function __construct($prenom, $nom, $paysOrigine){
         $this -> _prenom = $prenom;
         $this -> _nom = $nom;
         $this -> _paysOrigine = $paysOrigine;
-        // $this -> __equipes = array(); // INITIALISER le TABLEAU des équipes
+        $this -> __equipes = array(); // INITIALISER le TABLEAU des équipes
     }
-
-    // Placer une METHODE pour "STOCKER" chaque équipe"
-    // public function ajouterEquipes($equipes){ // AJOUTER "chaque" équipe au tableau
-    //     $this -> __equipes[] = $equipes ;
-    // }
-
-    // Placer ue méthode pour modifier la date de naissance en âge
 
     //GETTERS
     public function getPrenom(){
@@ -33,9 +26,7 @@
     public function getPaysOrigine(){
         return $this -> _paysOrigine;
     }
-    // public function getEquipe(){
-    //     return $this -> _equipes;
-    // }
+    
 
     //SETTERS
     public function setPrenom($prenom){
@@ -47,9 +38,7 @@
     public function setPaysOrigine($paysOrigine){
         $this -> _paysOrigine = $paysOrigine;
     }
-    // public function setEquipe($equipes){
-    //     $this -> _equipes = $equipes;
-    // }
+    
 
 
  }

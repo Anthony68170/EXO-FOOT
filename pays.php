@@ -14,6 +14,6 @@ class Pays{ // Déclarer la CLASS "Pays" - pour lister les Pays
       return $this -> _nomPays;
    }
       
-   }
+}
 
 

@@ -15,9 +15,13 @@ $equipe2 = new Equipe("Espagne", "Real Madrid");
 
 // Ajoute un joueur à une équipe 
 $joueur1 = new Equipe("France", "PSG");
+$joueur2 = new Equipe(paysEquipe: "Espagne", nomEquipe : "Real Madrid");
 
 // Ajouter des joueurs aux équipes
 $equipe1 -> ajouterJoueur($joueur1);
+$equipe2 -> ajouterJoueur($joueur2);
+
+
 // $equipe2 -> ajouterJoueur($joueur2);
 
 // Afficher les informations du joueur et ses équipes
