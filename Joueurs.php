@@ -6,7 +6,7 @@
     private string $_prenom;
     private string $_nom;
     private string $_paysOrigine;
-    private array $_equipes; // Créer le TABLEAU pour les "équipes"
+    // private array $_equipes; // Créer le TABLEAU pour les "équipes"
 
 // __construct pour INIATILIASER "chaque" attributs pour "chaque" joueur
     public function __construct($prenom, $nom, $paysOrigine){
