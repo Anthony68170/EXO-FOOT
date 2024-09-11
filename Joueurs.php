@@ -13,7 +13,6 @@
         $this -> _prenom = $prenom;
         $this -> _nom = $nom;
         $this -> _paysOrigine = $paysOrigine;
-        $this -> __equipes = array(); // INITIALISER le TABLEAU des équipes
     }
 
     //GETTERS

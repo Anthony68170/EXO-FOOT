@@ -1,4 +1,4 @@
-<!-- CODE PAYS des EQUIPES -->
+<!-- CODE PAYS -->
 
 <?php
 

@@ -14,7 +14,6 @@ public function __construct($paysEquipe, $nomEquipe){
     $this -> _paysEquipe = $paysEquipe;
     $this -> _nomEquipe = $nomEquipe;
     $this -> _joueurs = array(); // INITIALISER le tableau des joueurs
-    $joueur -> ajouterJoueur($this); // Pour ajouter un joueur à une équipe
 }
 
 //GETTERS
@@ -30,7 +29,7 @@ public function getJoueurs(){
 
 //  Méthode pour AJOUTER un joueur à une équipe
 public function ajouterJoueur(){ // AJouter dans un tableau vide "()"
-    // $this -> _joueurs[] = $joueur;
+    $this -> _joueurs[] = $joueur;
 }
 
 //Méthode pour AFFICHER équipe(s) du joueur
