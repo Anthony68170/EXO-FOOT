@@ -69,10 +69,11 @@ echo "</td>
 
 echo "<tr>
         <td>" . $equipe2 -> getNomEquipe() . "</td>
-        <td>" . $equipe2 -> getPaysEquipe() . "</td>
+        <td>" . $equipe2 -> getPayEquipe() . "</td>
         <td>";
-        foreach ($$equipe2 -> getJoueurs() as $key => $value) {
+        foreach ($equipe2 -> getJoueurs() as $joueur) {
             # code...
+            echo $joueur -> getPrenom() . " " . $joueur -> getNom() . " (" . $joueur -> getPaysOrigine() . ")<br>";
         }
         echo "</td>
                 </tr>";
