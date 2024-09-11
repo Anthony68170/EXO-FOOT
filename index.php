@@ -13,12 +13,12 @@ $joueur1 = new Joueurs("Killian", "MBAPPE", "France");
 $equipe1 = new Equipe("France", "PSG");
 $equipe2 = new Equipe("Espagne", "Real Madrid");
 
-// Ajoute / Enregistrer des équipes
+// Ajoute un joueur à une équipe 
 $joueur1 = new Equipe("France", "PSG");
 
 // Ajouter des joueurs aux équipes
 $equipe1 -> ajouterJoueur($joueur1);
-$equipe2 -> ajouterJoueur($joueur2);
+// $equipe2 -> ajouterJoueur($joueur2);
 
 // Afficher les informations du joueur et ses équipes
 $equipe1 -> afficherJoueurs();
