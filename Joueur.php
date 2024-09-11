@@ -20,6 +20,10 @@
     public function ajouterEquipes($equipes){ // AJOUTER "chaque" équipe au tableau
         $this -> __equipes[] = $equipes ;
     }
+
+    // Placer ue méthode pour modifier la date de naissance en âge
+
+    
     //GETTERS
     public function getPrenom(){
         return $this -> _prenom; // Le "_" permet d'accéder aux attributs
