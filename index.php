@@ -1,25 +1,26 @@
 <?php
 
 // INTEGRER LES DONNEES DES CLASSES PRECEDEMMENT DEFINIES
-include "Joueur.php"; // Inclusion des CLASS
+include "Joueurs.php"; // Inclusion des CLASS
 include "Equipe.php";
 include "Pays.php";
 
-// CREER les OBJETS
+                // CREER les OBJETS (ici joueurs et équipes)
 
-$joueur1 = new Joueur("Killian", "MBAPPE", "France");
+// Ajoute / Enregistrer des joueurs
+$joueur1 = new Joueurs("Killian", "MBAPPE", "France");
 
 $equipe1 = new Equipe("France", "PSG");
 $equipe2 = new Equipe("Espagne", "Real Madrid");
 
-// Ajouter une équipe à un joueur
-$joueur1 -> ajouterEquipes($equipe1);
-$joueur1 -> ajouterEquipes($equipe2);
+// Ajoute / Enregistrer des équipes
+$joueur1 = new Equipe("France", "PSG");
+
+// Ajouter des joueurs aux équipes
+$equipe1 -> ajouterJoueur($joueur1);
+$equipe2 -> ajouterJoueur($joueur2);
 
 // Afficher les informations du joueur et ses équipes
-echo "Joueur: " . $joueur1 -> getPrenom() . " " . $joueur1 -> getNom() . " - Pays d'origine: " . $joueur1 -> getPaysOrigine() . "<br>";
-echo "Équipes: ";
-foreach ($joueur1 -> getEquipe() as $equipe) {
-    echo $equipe -> getNomEquipe() . ", ";
-}
+$equipe1 -> afficherJoueurs();
+$equipe2 -> afficherJoueurs();
 
